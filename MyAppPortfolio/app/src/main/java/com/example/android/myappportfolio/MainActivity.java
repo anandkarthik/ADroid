@@ -40,58 +40,38 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void sendCapstoneMessage(View view) {
+    public void sendMessage(View view) {
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my capstone app!";
+        String appName = null;
+        switch (view.getId()) {
+            case R.id.spotify:
+                appName = "Spotify Streamer";
+                break;
+            case R.id.beacon:
+                appName = "Beacon Reader";
+                break;
+            case R.id.bigger:
+                appName = "Build Bigger";
+                break;
+            case R.id.capstone:
+                appName = "Capstone";
+                break;
+            case R.id.library:
+                appName = "Library";
+                break;
+            case R.id.scores:
+                appName = "Scores";
+                break;
+            default:
+                appName = "Oops";
+        }
+        CharSequence text = "This button will launch my "+appName+" app!";
+
         int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
         // Do something in response to button click
     }
-    public void sendSpotifyMessage(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Spotify Streamer app!";
-        int duration = Toast.LENGTH_SHORT;
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-        // Do something in response to button click
-    }
-    public void sendScoresMessage(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Scores app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-        // Do something in response to button click
-    }
-    public void sendLibraryMessage(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Library app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-        // Do something in response to button click
-    }
-    public void sendBiggerMessage(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Build Bigger app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-        // Do something in response to button click
-    }
-    public void sendBeaconMessage(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Beacon Reader app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-        // Do something in response to button click
-    }
 }
