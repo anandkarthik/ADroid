@@ -12,7 +12,7 @@
         android:id="@+id/rel"
         android:padding="5pt">
 
-    <TextView android:text="My Nano Degree Apps!" android:layout_width="wrap_content"
+    <TextView android:text="@string/nano_degree_apps_title" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
@@ -25,7 +25,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SPOTIFY STREAMER"
+        android:text="@string/spotify_streamer"
         android:id="@+id/spotify"
         android:layout_below="@+id/textView"
         android:layout_marginTop="30dp"
@@ -43,7 +43,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SCORES APP"
+        android:text="@string/scores_app"
         android:id="@+id/scores"
         android:layout_below="@+id/spotify"
         android:background="#F08C35"
@@ -61,7 +61,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LIBRARY APP"
+        android:text="@string/library_app"
         android:id="@+id/library"
         android:layout_below="@+id/scores"
         android:background="#F08C35"
@@ -79,7 +79,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BUILD IT BIGGER"
+        android:text="@string/build_it_bigger"
         android:id="@+id/bigger"
         android:layout_below="@+id/library"
         android:background="#F08C35"
@@ -97,7 +97,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BEACON READER"
+        android:text="@string/beacon_reader"
         android:id="@+id/beacon"
         android:layout_below="@+id/bigger"
         android:background="#F08C35"
@@ -115,7 +115,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CAPSTONE: LOAD"
+        android:text="@string/capstone"
         android:id="@+id/capstone"
         android:layout_below="@+id/beacon"
         android:onClick="sendMessage"
