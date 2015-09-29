@@ -113,13 +113,13 @@
         />
 
     <Button
+        android:background="@drawable/button_selector"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/capstone"
         android:id="@+id/capstone"
         android:layout_below="@+id/beacon"
         android:onClick="sendMessage"
-        android:background="#F08C35"
         android:enabled="true"
         android:clickable="true"
         android:layout_marginTop="10dp"
