@@ -71,10 +71,10 @@ public class MainActivity extends Activity {
 
         int duration = Toast.LENGTH_SHORT;
 
-        appToast = Toast.makeText(context, text, duration);
-        if(appToast !=null){
+        if(appToast != null){
             appToast.cancel();
         }
+        appToast = Toast.makeText(context, text, duration);
         appToast.show();
         // Do something in response to button click
     }
