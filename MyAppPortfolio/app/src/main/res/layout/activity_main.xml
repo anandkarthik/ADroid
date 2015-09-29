@@ -1,10 +1,16 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context=".MainActivity"
     android:id="@+id/main"
     android:clickable="true"
     android:background="#fffffee3">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:id="@+id/rel"
+        android:padding="5pt">
 
     <TextView android:text="My Nano Degree Apps!" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -13,7 +19,8 @@
         android:layout_centerHorizontal="true"
         style="?android:textAppearanceLarge"
         android:autoText="true"
-        android:background="#ff938fff" />
+        android:background="#ff938fff"
+        android:padding="5pt" />
 
     <Button
         android:layout_width="wrap_content"
@@ -112,7 +119,7 @@
         android:id="@+id/capstone"
         android:layout_below="@+id/beacon"
         android:onClick="sendMessage"
-        android:background="#fff0424e"
+        android:background="#F08C35"
         android:enabled="true"
         android:clickable="true"
         android:layout_marginTop="10dp"
@@ -124,3 +131,4 @@
         />
 
 </RelativeLayout>
+</ScrollView>
