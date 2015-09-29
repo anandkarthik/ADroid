@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+    private Toast appToast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,8 +71,11 @@ public class MainActivity extends Activity {
 
         int duration = Toast.LENGTH_SHORT;
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        appToast = Toast.makeText(context, text, duration);
+        if(appToast !=null){
+            appToast.cancel();
+        }
+        appToast.show();
         // Do something in response to button click
     }
 
